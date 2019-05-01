@@ -8,19 +8,27 @@
   </title>
 </head>
 <body>
-  <svg width="500" height="500">
-    <text x="90" y="90">p1</text>
-    <line x1="100" y1="100" x2="100" y2="500" style="stroke:black; stroke-width:1; opacity:1.0" />
+  <svg width="500" height="1000">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+      </marker>
+    </defs>
+
+    <text x="90" y="20">p1</text>
+    <line x1="100" y1="30" x2="100" y2="1000" style="stroke:black; stroke-width:1; opacity:1.0" />
 
 
-    <text x="390" y="90">p2</text>
-    <line x1="400" y1="100" x2="400" y2="500" style="stroke:black; stroke-width:1; opacity:1.0" />
+    <text x="390" y="20">p2</text>
+    <line x1="400" y1="30" x2="400" y2="1000" style="stroke:black; stroke-width:1; opacity:1.0" />
 
-    <text x="80" y="205">e1</text>
+    <text x="80" y="155">e1</text>
+    <line x1="100" y1="150" x2="390" y2="200" style="stroke:black; stroke-width:1; opacity:1.0" marker-end="url(#arrow)"  />
     <text x="405" y="205">e2</text>
-    <line x1="100" y1="200" x2="400" y2="200" style="stroke:black; stroke-width:1; opacity:1.0" />
-    <line x1="390" y1="190" x2="400" y2="200" style="stroke:black; stroke-width:1; opacity:1.0" />
-    <line x1="390" y1="210" x2="400" y2="200" style="stroke:black; stroke-width:1; opacity:1.0" />
+
+    <text x="405" y="255">e3</text>
+    <line x1="400" y1="250" x2="110" y2="300" style="stroke:black; stroke-width:1; opacity:1.0" marker-end="url(#arrow)"  />
+    <text x="80" y="305">e4</text>
   </svg>
 </body>
 </html>
